@@ -21,8 +21,7 @@
     
     ASViewController *asViewController =
     [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
-    UINavigationController *navgView = [[UINavigationController alloc]
-                                        initWithRootViewController:asViewController];
+    UINavigationController *navgView = [[UINavigationController alloc] initWithRootViewController:asViewController];
     self.window.rootViewController = navgView;
     
     [self.window makeKeyAndVisible];

@@ -11,14 +11,7 @@
 
 @interface ASContentView : UIView
 
-/*
- 
-*/
 - (instancetype)initWithFrame:(CGRect)frame item:(ASItem *)item ;
-
-/*
- 
- */
 - (instancetype)initWithFrame:(CGRect)frame withColor:(UIColor *)color andIndex:(int)index ;
 
 @end
