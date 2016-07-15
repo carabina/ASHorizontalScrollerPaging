@@ -19,8 +19,7 @@
     
     [[UINavigationBar appearance] setTranslucent:NO];
     
-    ASViewController *asViewController =
-    [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
+    ASViewController *asViewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
     UINavigationController *navgView = [[UINavigationController alloc] initWithRootViewController:asViewController];
     self.window.rootViewController = navgView;
     
