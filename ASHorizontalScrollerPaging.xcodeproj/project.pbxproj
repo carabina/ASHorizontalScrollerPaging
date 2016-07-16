@@ -17,6 +17,9 @@
 		14DE0FFA1D38F61300D3C104 /* ASContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE0FEF1D38F61300D3C104 /* ASContentView.m */; };
 		14DE0FFB1D38F61300D3C104 /* ASHorizontalScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE0FF11D38F61300D3C104 /* ASHorizontalScroller.m */; };
 		14DE0FFE1D38FA9B00D3C104 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14DE0FFD1D38FA9B00D3C104 /* Default-568h@2x.png */; };
+		14DE10021D3A2AE600D3C104 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE10001D3A2AE600D3C104 /* ASRootViewController.m */; };
+		14DE10031D3A2AE600D3C104 /* ASRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DE10011D3A2AE600D3C104 /* ASRootViewController.xib */; };
+		14DE10071D3A312D00D3C104 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE10061D3A312D00D3C104 /* UIView+Custom.m */; };
 		5A04D597183CA9B60060A800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A04D596183CA9B60060A800 /* Foundation.framework */; };
 		5A04D599183CA9B60060A800 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A04D598183CA9B60060A800 /* CoreGraphics.framework */; };
 		5A04D59B183CA9B60060A800 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A04D59A183CA9B60060A800 /* UIKit.framework */; };
@@ -60,6 +63,11 @@
 		14DE0FF01D38F61300D3C104 /* ASHorizontalScroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHorizontalScroller.h; sourceTree = "<group>"; };
 		14DE0FF11D38F61300D3C104 /* ASHorizontalScroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHorizontalScroller.m; sourceTree = "<group>"; };
 		14DE0FFD1D38FA9B00D3C104 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		14DE0FFF1D3A2AE600D3C104 /* ASRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRootViewController.h; sourceTree = "<group>"; };
+		14DE10001D3A2AE600D3C104 /* ASRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRootViewController.m; sourceTree = "<group>"; };
+		14DE10011D3A2AE600D3C104 /* ASRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASRootViewController.xib; sourceTree = "<group>"; };
+		14DE10051D3A312D00D3C104 /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
+		14DE10061D3A312D00D3C104 /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
 		5A04D593183CA9B60060A800 /* ASHorizontalScrollerPaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASHorizontalScrollerPaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A04D596183CA9B60060A800 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A04D598183CA9B60060A800 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +120,7 @@
 				14DE0FED1D38F61300D3C104 /* Views */,
 				14DE0FE11D38F61300D3C104 /* Controllers */,
 				14DE0FE61D38F61300D3C104 /* Library */,
+				14DE10041D3A311800D3C104 /* Utilities */,
 			);
 			path = ASHorizontalScrollerPaging;
 			sourceTree = "<group>";
@@ -131,6 +140,9 @@
 				14DE0FE21D38F61300D3C104 /* ASViewController.h */,
 				14DE0FE31D38F61300D3C104 /* ASViewController.m */,
 				14DE0FE41D38F61300D3C104 /* ASViewController.xib */,
+				14DE0FFF1D3A2AE600D3C104 /* ASRootViewController.h */,
+				14DE10001D3A2AE600D3C104 /* ASRootViewController.m */,
+				14DE10011D3A2AE600D3C104 /* ASRootViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +185,15 @@
 			);
 			name = "Supporting Files";
 			path = ASHorizontalScrollerPaging;
+			sourceTree = "<group>";
+		};
+		14DE10041D3A311800D3C104 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				14DE10051D3A312D00D3C104 /* UIView+Custom.h */,
+				14DE10061D3A312D00D3C104 /* UIView+Custom.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		5A04D58A183CA9B60060A800 = {
@@ -292,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DE10031D3A2AE600D3C104 /* ASRootViewController.xib in Resources */,
 				14DE0FF51D38F61300D3C104 /* ASViewController.xib in Resources */,
 				14DE0FFE1D38FA9B00D3C104 /* Default-568h@2x.png in Resources */,
 				14DE0FF61D38F61300D3C104 /* Images.xcassets in Resources */,
@@ -312,12 +334,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DE10021D3A2AE600D3C104 /* ASRootViewController.m in Sources */,
 				14DE0FF41D38F61300D3C104 /* ASViewController.m in Sources */,
 				14DE0FFB1D38F61300D3C104 /* ASHorizontalScroller.m in Sources */,
 				14DE0FF21D38F61300D3C104 /* ASAppDelegate.m in Sources */,
 				14DE0FF91D38F61300D3C104 /* ASItem.m in Sources */,
 				14DE0FFA1D38F61300D3C104 /* ASContentView.m in Sources */,
 				14DE0FF71D38F61300D3C104 /* DDPageControl.m in Sources */,
+				14DE10071D3A312D00D3C104 /* UIView+Custom.m in Sources */,
 				14DE0FF81D38F61300D3C104 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

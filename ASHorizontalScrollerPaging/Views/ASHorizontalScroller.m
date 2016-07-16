@@ -21,7 +21,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        scroller = [[UIScrollView alloc] initWithFrame:CGRectMake(VIEWS_OFFSET, VIEW_PADDING_DEFAULT, frame.size.width, 450)];
+        scroller = [[UIScrollView alloc] initWithFrame:frame];
         scroller.showsHorizontalScrollIndicator = NO ;
         scroller.delegate = self;
         [scroller setPagingEnabled:YES];
@@ -67,7 +67,7 @@
         // 4 - add a view at the right position
         startValue += VIEW_PADDING_DEFAULT;
         UIView *view = [self.dataSource horizontalScroller:self viewAtIndex:i];
-        view.frame = CGRectMake(startValue, VIEW_PADDING_DEFAULT, self.scrollWidth, self.scrollWidth);
+        view.frame = CGRectMake(startValue, VIEW_PADDING_DEFAULT, self.scrollWidth, self.scrollHeight);
         [scroller addSubview:view];
         startValue += self.scrollWidth + VIEW_PADDING_DEFAULT;
     }
@@ -86,6 +86,5 @@
     float fractionalPage = scroller.contentOffset.x / pageWidth ;
     [self.delegate horizontalScrollerDidScrollView:fractionalPage];
 }
-
 
 @end

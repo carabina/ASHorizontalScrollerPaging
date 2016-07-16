@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+Custom.h"
 
 @class ASHorizontalScroller ;
 @protocol ASHorizontalScrollerDataSource <NSObject>
@@ -37,7 +38,8 @@
 
 @interface ASHorizontalScroller : UIView
 
-@property (nonatomic, assign) int scrollWidth;
+@property (nonatomic, assign) float scrollWidth;
+@property (nonatomic, assign) float scrollHeight;
 @property (nonatomic, weak) id <ASHorizontalScrollerDataSource> dataSource ;
 @property (nonatomic, weak) id <ASHorizontalScrollerDelegate> delegate;
 

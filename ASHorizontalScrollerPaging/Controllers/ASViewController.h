@@ -11,6 +11,8 @@
 #import "DDPageControl.h"
 #import "ASItem.h"
 #import "ASContentView.h"
+#import "ASRootViewController.h"
+#import "UIView+Custom.h"
 
 @interface ASViewController : UIViewController <ASHorizontalScrollerDataSource,ASHorizontalScrollerDelegate>
 
@@ -18,5 +20,7 @@
 @property (nonatomic, strong) NSArray *colors;
 @property (nonatomic, strong) DDPageControl *pageControl;
 @property (nonatomic, strong) ASHorizontalScroller *scroller;
+
+- (IBAction)doneAction:(id)sender;
 
 @end

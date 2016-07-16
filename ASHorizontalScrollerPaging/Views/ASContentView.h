@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ASItem.h"
+#import "UIView+Custom.h"
 
 @interface ASContentView : UIView
 

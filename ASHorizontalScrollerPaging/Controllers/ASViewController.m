@@ -8,9 +8,9 @@
 
 #import "ASViewController.h"
 
-#define HIEGHT 450
-
 @interface ASViewController ()
+
+@property (nonatomic, assign) float viewHeight;
 
 @end
 
@@ -30,29 +30,33 @@
     // Do any additional setup after loading the view from its nib.
     self.title = @"ASHorizontalScrollerPaging";
     
-    // self.items = [[ASItem getInstance] items];
+    self.items = [[ASItem getInstance] items];
     self.colors = [[ASItem getInstance] colors];
     
-    _scroller = [[ASHorizontalScroller alloc] initWithFrame:CGRectMake(VIEWS_OFFSET, VIEW_PADDING_DEFAULT, self.view.frame.size.width, HIEGHT)];
+    //set ScrollView Height
+    _viewHeight = self.view.height * 0.6;
+    
+    _scroller = [[ASHorizontalScroller alloc] initWithFrame:CGRectMake(VIEWS_OFFSET, VIEW_PADDING_DEFAULT, self.view.width, _viewHeight)];
     _scroller.dataSource = self;
     _scroller.delegate = self;
     _scroller.scrollWidth = self.view.frame.size.width;
+    _scroller.scrollHeight = _viewHeight;
     [self.view addSubview:_scroller];
     
     _pageControl = [[DDPageControl alloc] init];
-    [_pageControl setCenter:CGPointMake(self.view.center.x, HIEGHT - 50)];
-    [_pageControl setNumberOfPages:self.colors.count]; // self.images.count
+    [_pageControl setCenter:CGPointMake(self.view.center.x, _scroller.y + _viewHeight + 20)];
+    [_pageControl setNumberOfPages:self.items.count]; // self.colors.count
     [_pageControl setCurrentPage:0];
     [_pageControl setDefersCurrentPageDisplay:YES];
     [_pageControl setType:DDPageControlTypeOnFullOffFull];
     [_pageControl setOffColor:RGBA(80, 210, 235, 1)];
     [_pageControl setOnColor:RGBA(1, 171, 216, 1)];
-    [_pageControl setIndicatorDiameter:12.0f];
-    [_pageControl setIndicatorSpace:12.0f];
+    [_pageControl setIndicatorDiameter:10.0f];
+    [_pageControl setIndicatorSpace:10.0f];
     [self.view addSubview:_pageControl];
 }
 
-#pragma mark - KCHorizontalScrollerDelegate
+#pragma mark - ASHorizontalScrollerDelegate
 
 - (void)horizontalScrollerDidScrollView:(float)fractional {
     
@@ -72,21 +76,29 @@
     NSLog(@"index %d", index);
 }
 
-#pragma mark - KCHorizontalScrollerDataSource
+#pragma mark - ASHorizontalScrollerDataSource
 
 - (NSInteger)numberOfViewsForHorizontalScroller:(ASHorizontalScroller *)scroller {
-   
-    // return self.items.count;
-    return self.colors.count;
+    
+    return self.items.count;
+    //return self.colors.count;
 }
 
 - (UIView *)horizontalScroller:(ASHorizontalScroller *)scroller viewAtIndex:(int)index {
-   
-    //    ASItem *item = [self.items objectAtIndex:index];
-    //    return [[ASContentView alloc] initWithFrame:CGRectMake(0.0f, 0.0f,self.view.frame.size.width, _scroller.frame.size.height) item:item];
     
-    UIColor *color = [self.colors objectAtIndex:index];
-    return [[ASContentView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.view.frame.size.width,300) withColor:color andIndex:index];
+    ASItem *item = self.items[index];
+    return [[ASContentView alloc] initWithFrame:_scroller.frame item:item];
+    
+//    Using Colors
+//    UIColor *color = self.colors[index];
+//    return [[ASContentView alloc] initWithFrame:_scroller.frame withColor:color andIndex:index];
+}
+
+#pragma mark - Event Handler
+- (IBAction)doneAction:(id)sender {
+    
+    ASRootViewController *rootView = [[ASRootViewController alloc] initWithNibName:@"ASRootViewController" bundle:nil];
+    [self.navigationController pushViewController:rootView animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,7 +8,7 @@
 
 #import "ASItem.h"
 
-#define IMAGESCOUNT 2
+#define IMAGESCOUNT 3
 
 ASItem *tourInstance = nil;
 
@@ -39,19 +39,16 @@ ASItem *tourInstance = nil;
     NSMutableArray *resultArray = [[NSMutableArray alloc] init];
     
     for (int i = 0; i < IMAGESCOUNT; i++) {
-        NSString *imageName = [NSString stringWithFormat:@"ip5_tour_%d", i + 1];
+        NSString *imageName = [NSString stringWithFormat:@"Intro_Screen_%d", i + 1];
         UIImage *image = [UIImage imageNamed:imageName];
         ASItem *tourObject =
-        [[ASItem alloc] initWithImage:image
-                             andValue:[NSString stringWithFormat:@"%d", i + 1]];
+        [[ASItem alloc] initWithImage:image andValue:[NSString stringWithFormat:@"%d", i + 1]];
         [resultArray addObject:tourObject];
     }
     return resultArray;
 }
 
 - (NSArray *)colors {
-    return [NSArray arrayWithObjects:RGBA(70, 249, 26, 1), RGBA(70, 103, 26, 1),
-            RGBA(70, 103, 97, 1), RGBA(244, 136, 0, 1),
-            RGBA(224, 151, 255, 1), nil];
+    return @[RGBA(70, 249, 26, 1), RGBA(70, 103, 26, 1), RGBA(70, 103, 97, 1), RGBA(244, 136, 0, 1), RGBA(224, 151, 255, 1)];
 }
 @end
