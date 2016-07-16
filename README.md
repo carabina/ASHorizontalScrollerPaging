@@ -2,9 +2,7 @@
 ASHorizontalScrollerPaging is an easy way to use it for inroducing some screens of your application so the user will be familiar with your application.
 
 
-![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASHorizontalScrollerPaging/blob/master/ASHorizontalScrollerPaging/Shoot1.png)
-
-![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASHorizontalScrollerPaging/blob/master/ASHorizontalScrollerPaging/Shoot2.png)
+![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASHorizontalScrollerPaging/blob/master/ASHorizontalScrollerPaging/Shoot1.png) ![ASHorizontalScrollerPaging](https://github.com/AhmedAskar/ASHorizontalScrollerPaging/blob/master/ASHorizontalScrollerPaging/Shoot2.png)
 
 # License
 
