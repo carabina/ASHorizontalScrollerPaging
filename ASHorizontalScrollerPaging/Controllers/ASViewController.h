@@ -21,6 +21,4 @@
 @property (nonatomic, strong) DDPageControl *pageControl;
 @property (nonatomic, strong) ASHorizontalScroller *scroller;
 
-- (IBAction)doneAction:(id)sender;
-
 @end

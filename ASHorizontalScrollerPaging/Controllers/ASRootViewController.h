@@ -2,8 +2,8 @@
 //  ASRootViewController.h
 //  ASHorizontalScrollerPaging
 //
-//  Created by Ahmed Askar on 7/16/16.
-//  Copyright © 2016 Askar. All rights reserved.
+//  Created by Askar on 03/14/13.
+//  Copyright (c) 2013 Askar. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

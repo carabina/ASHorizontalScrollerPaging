@@ -94,13 +94,6 @@
 //    return [[ASContentView alloc] initWithFrame:_scroller.frame withColor:color andIndex:index];
 }
 
-#pragma mark - Event Handler
-- (IBAction)doneAction:(id)sender {
-    
-    ASRootViewController *rootView = [[ASRootViewController alloc] initWithNibName:@"ASRootViewController" bundle:nil];
-    [self.navigationController pushViewController:rootView animated:YES];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
