@@ -11,13 +11,14 @@ ASHorizontalScrollerPaging is an easy way to use it for inroducing some screens 
 
 To use the ASHorizontalScrollerPaging please do the following:
 
-1. Add the follwing files found in the CLASSES folder to your project:
+Add the follwing files found in the CLASSES folder to your project:
 ```
 *ASHorizontalScroller.h
 *ASHorizontalScroller.m
 ```
 
-2. Add the following lines of code to your ViewDidLoad:
+
+Add the following lines of code to your ViewDidLoad:
 ```
 //set ScrollView Height
 _viewHeight = self.view.height * 0.6;
