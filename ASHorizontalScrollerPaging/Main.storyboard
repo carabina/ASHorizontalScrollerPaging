@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Y0-Bi-LuX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IfZ-91-yjf">
+            <objects>
+                <navigationController id="8Y0-Bi-LuX" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="j6A-ab-2K2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ae3-Fj-3Hh" kind="relationship" relationship="rootViewController" id="lfJ-8T-XgY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaQ-BM-Kh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-523" y="419"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xHy-xJ-mY3">
+            <objects>
+                <viewController id="Ae3-Fj-3Hh" customClass="ASViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="814-pG-ywR"/>
+                        <viewControllerLayoutGuide type="bottom" id="iur-Ag-SZv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ALP-Do-aaC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5s-Q8-Xsl">
+                                <rect key="frame" x="0.0" y="449" width="320" height="55"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.4941176471" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="opm-V2-Ze9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Let's Go!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneAction:" destination="Ae3-Fj-3Hh" eventType="touchUpInside" id="vgO-BN-57d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u5s-Q8-Xsl" firstAttribute="width" secondItem="ALP-Do-aaC" secondAttribute="width" id="Pum-xq-czz"/>
+                            <constraint firstItem="u5s-Q8-Xsl" firstAttribute="centerX" secondItem="ALP-Do-aaC" secondAttribute="centerX" id="bah-6l-LU8"/>
+                            <constraint firstItem="iur-Ag-SZv" firstAttribute="top" secondItem="u5s-Q8-Xsl" secondAttribute="bottom" id="zTk-xQ-9T7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vfl-hV-Fcg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2S-sJ-F51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-125" y="419"/>
+        </scene>
+    </scenes>
+</document>

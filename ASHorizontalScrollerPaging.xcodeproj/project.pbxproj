@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		14DE0FF21D38F61300D3C104 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE0FDE1D38F61300D3C104 /* ASAppDelegate.m */; };
 		14DE0FF41D38F61300D3C104 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE0FE31D38F61300D3C104 /* ASViewController.m */; };
-		14DE0FF51D38F61300D3C104 /* ASViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DE0FE41D38F61300D3C104 /* ASViewController.xib */; };
 		14DE0FF61D38F61300D3C104 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DE0FE51D38F61300D3C104 /* Images.xcassets */; };
 		14DE0FF71D38F61300D3C104 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE0FE81D38F61300D3C104 /* DDPageControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14DE0FF81D38F61300D3C104 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE0FE91D38F61300D3C104 /* main.m */; };
@@ -20,6 +19,8 @@
 		14DE10021D3A2AE600D3C104 /* ASRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE10001D3A2AE600D3C104 /* ASRootViewController.m */; };
 		14DE10031D3A2AE600D3C104 /* ASRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DE10011D3A2AE600D3C104 /* ASRootViewController.xib */; };
 		14DE10071D3A312D00D3C104 /* UIView+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DE10061D3A312D00D3C104 /* UIView+Custom.m */; };
+		14DE10091D3A932200D3C104 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DE10081D3A932200D3C104 /* Launch Screen.storyboard */; };
+		14DE100B1D3A942B00D3C104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DE100A1D3A942B00D3C104 /* Main.storyboard */; };
 		5A04D597183CA9B60060A800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A04D596183CA9B60060A800 /* Foundation.framework */; };
 		5A04D599183CA9B60060A800 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A04D598183CA9B60060A800 /* CoreGraphics.framework */; };
 		5A04D59B183CA9B60060A800 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A04D59A183CA9B60060A800 /* UIKit.framework */; };
@@ -51,7 +52,6 @@
 		14DE0FE01D38F61300D3C104 /* ASHorizontalScrollerPaging-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASHorizontalScrollerPaging-Prefix.pch"; sourceTree = "<group>"; };
 		14DE0FE21D38F61300D3C104 /* ASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
 		14DE0FE31D38F61300D3C104 /* ASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
-		14DE0FE41D38F61300D3C104 /* ASViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASViewController.xib; sourceTree = "<group>"; };
 		14DE0FE51D38F61300D3C104 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ASHorizontalScrollerPaging/Images.xcassets; sourceTree = "<group>"; };
 		14DE0FE71D38F61300D3C104 /* DDPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
 		14DE0FE81D38F61300D3C104 /* DDPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
@@ -68,6 +68,8 @@
 		14DE10011D3A2AE600D3C104 /* ASRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASRootViewController.xib; sourceTree = "<group>"; };
 		14DE10051D3A312D00D3C104 /* UIView+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Custom.h"; sourceTree = "<group>"; };
 		14DE10061D3A312D00D3C104 /* UIView+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Custom.m"; sourceTree = "<group>"; };
+		14DE10081D3A932200D3C104 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		14DE100A1D3A942B00D3C104 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5A04D593183CA9B60060A800 /* ASHorizontalScrollerPaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASHorizontalScrollerPaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A04D596183CA9B60060A800 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5A04D598183CA9B60060A800 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +123,8 @@
 				14DE0FE11D38F61300D3C104 /* Controllers */,
 				14DE0FE61D38F61300D3C104 /* Library */,
 				14DE10041D3A311800D3C104 /* Utilities */,
+				14DE10081D3A932200D3C104 /* Launch Screen.storyboard */,
+				14DE100A1D3A942B00D3C104 /* Main.storyboard */,
 			);
 			path = ASHorizontalScrollerPaging;
 			sourceTree = "<group>";
@@ -139,7 +143,6 @@
 			children = (
 				14DE0FE21D38F61300D3C104 /* ASViewController.h */,
 				14DE0FE31D38F61300D3C104 /* ASViewController.m */,
-				14DE0FE41D38F61300D3C104 /* ASViewController.xib */,
 				14DE0FFF1D3A2AE600D3C104 /* ASRootViewController.h */,
 				14DE10001D3A2AE600D3C104 /* ASRootViewController.m */,
 				14DE10011D3A2AE600D3C104 /* ASRootViewController.xib */,
@@ -282,7 +285,7 @@
 				ORGANIZATIONNAME = Askar;
 				TargetAttributes = {
 					5A04D592183CA9B60060A800 = {
-						DevelopmentTeam = 77W24WFU86;
+						DevelopmentTeam = XKXBBHWH74;
 					};
 					5A04D5AD183CA9B60060A800 = {
 						TestTargetID = 5A04D592183CA9B60060A800;
@@ -314,8 +317,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14DE10031D3A2AE600D3C104 /* ASRootViewController.xib in Resources */,
-				14DE0FF51D38F61300D3C104 /* ASViewController.xib in Resources */,
 				14DE0FFE1D38FA9B00D3C104 /* Default-568h@2x.png in Resources */,
+				14DE100B1D3A942B00D3C104 /* Main.storyboard in Resources */,
+				14DE10091D3A932200D3C104 /* Launch Screen.storyboard in Resources */,
 				14DE0FF61D38F61300D3C104 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +455,7 @@
 				PRODUCT_NAME = ASHorizontalScrollerPaging;
 				PROVISIONING_PROFILE = "36046DED-681A-4F94-AFBC-FCE45E710A71";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -468,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Pharmacy.ASHorizontalScrollerPaging;
 				PRODUCT_NAME = ASHorizontalScrollerPaging;
 				PROVISIONING_PROFILE = "36046DED-681A-4F94-AFBC-FCE45E710A71";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

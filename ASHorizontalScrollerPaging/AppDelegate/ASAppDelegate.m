@@ -15,15 +15,8 @@
 @implementation ASAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    [[UINavigationBar appearance] setTranslucent:NO];
-    
-    ASViewController *asViewController = [[ASViewController alloc] initWithNibName:@"ASViewController" bundle:nil];
-    UINavigationController *navgView = [[UINavigationController alloc] initWithRootViewController:asViewController];
-    self.window.rootViewController = navgView;
-    
-    [self.window makeKeyAndVisible];
+    // Override point for customization after application launch.
+
     return YES;
 }
 
