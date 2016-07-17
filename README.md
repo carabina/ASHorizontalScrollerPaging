@@ -1,6 +1,6 @@
 # ASHorizontalScrollerPaging
 ========================
-ASHorizontalScrollerPaging is an easy way to use it for inroducing some screens of your application so the user will be familiar with your application or use it as Image Gallery
+ASHorizontalScrollerPaging is a very simple control to display some screens for the first launch of your application or as an Image Gallery
 
 
 
