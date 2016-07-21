@@ -61,7 +61,7 @@
 - (void)horizontalScrollerDidScrollView:(float)fractional {
     
     NSInteger nearestNumber = lround(fractional);
-    
+
     if (_pageControl.currentPage != nearestNumber) {
         _pageControl.currentPage = nearestNumber;
         

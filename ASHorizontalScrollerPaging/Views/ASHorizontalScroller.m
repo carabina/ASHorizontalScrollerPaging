@@ -16,9 +16,9 @@
 
 @implementation ASHorizontalScroller
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
+    
     if (self) {
         // Initialization code
         scroller = [[UIScrollView alloc] initWithFrame:frame];
@@ -33,8 +33,8 @@
     return self;
 }
 
-- (void)scrollerIsTapped:(UITapGestureRecognizer *)gesture
-{
+- (void)scrollerIsTapped:(UITapGestureRecognizer *)gesture {
+    
     CGPoint location = [gesture locationInView:gesture.view];
     
     // Enumerate only all subviews we added
@@ -51,8 +51,8 @@
     }
 }
 
-- (void)reload
-{
+- (void)reload {
+    
     if (self.dataSource == nil)
         return;
     
@@ -75,13 +75,12 @@
     [scroller setContentSize:CGSizeMake(startValue + VIEWS_OFFSET, self.frame.size.height)];
 }
 
-- (void)didMoveToSuperview
-{
+- (void)didMoveToSuperview {
     [self reload];
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)aScrollView
-{
+- (void)scrollViewDidScroll:(UIScrollView *)aScrollView {
+    
     CGFloat pageWidth = scroller.bounds.size.width ;
     float fractionalPage = scroller.contentOffset.x / pageWidth ;
     [self.delegate horizontalScrollerDidScrollView:fractionalPage];
